@@ -1,0 +1,47 @@
+{
+  "name": "Challenge",
+  "version": "0.0.1",
+  "description": "Bob.io Challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "start-local": "node server.js",
+    "dev": "nodemon src/server.js",
+    "dev-local": "nodemon server.js"
+  },
+  "engines": {
+    "node": "6.9.5",
+    "npm": "4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://DevStarlight@bitbucket.org/devstarligh/codingChallenge.git"
+  },
+  "author": "Jesús Huerta Arrabal",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "keywords": [
+    "food",
+    "restaurant",
+    "healtyFood"
+  ],
+  "dependencies": {
+    "body-parser": "1.18.1",
+    "express": "4.16.3",
+    "morgan": "1.9.0",
+    "mongoose": "4.13.12",
+    "cors": "2.8.4",
+    "bluebird": "3.5.1",
+    "fs": "0.0.1-security",
+    "validator": "5.7.0",
+    "winston": "^2.4.0",
+    "helmet": "^3.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
