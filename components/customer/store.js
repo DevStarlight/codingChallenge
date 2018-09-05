@@ -22,7 +22,17 @@ function exist(condition) {
 /**
  * Method that return a list of customers
  */
-function list() {	
+function list(offset, limit) {
+	if (offset && limit) {
+		const statements = {
+			select: 'name bags',
+			skip: parseInt(offset),
+			limit: parseInt(limit)
+
+		};
+		return Store.query(schema, {}, statements, true);
+	}
+
 	return Store.list(schema, {});
 }
 

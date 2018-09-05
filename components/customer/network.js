@@ -3,7 +3,7 @@ const Response = require('../../network/response');
 const Controller = require('./');
 
 router.get('/', (req, res, next) => {
-	Controller.list().then(response => {
+	Controller.list(req.query).then(response => {
 		Response.success(req, res, next, (response.code || 200), response.data);
 	}).catch(error => {
 		Response.error(req, res, next, (error.status || 500), error.message);
