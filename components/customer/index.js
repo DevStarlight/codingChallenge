@@ -11,8 +11,8 @@ exports.remove = remove;
 /**
  * Method that return a list of customers
  */
-function list() {
-	return Store.list().then(customers => {
+function list(query) {
+	return Store.list(query.offset, query.limit).then(customers => {
 		return { data: customers };
 	});
 }
