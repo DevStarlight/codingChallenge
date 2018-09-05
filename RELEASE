@@ -1,7 +1,2 @@
-v0.0.1
-- Project structure init
-- Create an endpoint to list all the customers
-- Create an endpoint to get a specific user
-- Create an endpoint to save the user
-- Create an endpoint to update a given user
-- Create an endpoint to delete a given user
+v1.0.1
+- Add support for pagination
